@@ -12,9 +12,14 @@ function question(questionText, realAnswer) {
   console.log("total asked: " + totalAsked + " // correct: " + correct);
 }
 
-question("asking some question", "TEST");
-question("another question here", "ANSWER");
-question("a final question for the demo", "DEMO");
+var questions = [
+  ["question one", "answer one"],
+  ["question two", "answer two"]
+  ];
+
+for(i,0,i<questions.length){
+  question(questions[i][0],questions[i][1])
+}
 
 // var answer1 = prompt("Name a programming language that's also a gem");
 // if ( answer1.toUpperCase() === 'RUBY' ) {
