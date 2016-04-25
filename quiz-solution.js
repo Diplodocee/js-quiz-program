@@ -1,6 +1,7 @@
 // quiz begins, no answers correct
 var correct = 0;
 var totalAsked = 0;
+var i = 0;
 
 // ask questions
 function question(questionText, realAnswer) {
@@ -17,8 +18,9 @@ var questions = [
   ["question two", "answer two"]
   ];
 
-for(i,0,i<questions.length){
+while(i<questions.length){
   question(questions[i][0],questions[i][1]);
+  i++;
 }
 
 // var answer1 = prompt("Name a programming language that's also a gem");
