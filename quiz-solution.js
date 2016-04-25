@@ -18,7 +18,7 @@ var questions = [
   ];
 
 for(i,0,i<questions.length){
-  question(questions[i][0],questions[i][1])
+  question(questions[i][0],questions[i][1]);
 }
 
 // var answer1 = prompt("Name a programming language that's also a gem");
