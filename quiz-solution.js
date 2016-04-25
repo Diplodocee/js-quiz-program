@@ -48,11 +48,11 @@ while(i<questions.length){
 document.write("<p>You got " + correct + " out of " + totalAsked + " questions correct.<p>");
 
 // output rank
-if ( correct === 5 ) {
+if ( correct === totalAsked ) {
   document.write("<p><strong>You earned a gold crown!</strong></p>");
-} else if (correct > 3) {
+} else if (correct > (totalAsked*(2/3))) {
   document.write("<p><strong>You earned a silver crown.</strong></p>");
-} else if (correct > 2) {
+} else if (correct > (totalAsked*(1/3))) {
   document.write("<p><strong>You earned a bronze crown.</strong></p>");
 } else {
   document.write("<p><strong>No crown for you. You need to study.</strong></p>");
